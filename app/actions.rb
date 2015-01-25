@@ -1,4 +1,5 @@
 # Homepage (Root path)
-get '/' do
+get '/hello/:name' do
   erb :index
+  # "Hello #{params[:name]}"
 end
