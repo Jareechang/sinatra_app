@@ -1,4 +1,3 @@
-<h1> <%= @message.title %> </h1>
 
 <p> 
 Author: <%= @message.author %> 
@@ -7,6 +6,24 @@ Author: <%= @message.author %>
 <p> 
  <%= @message.content %> 
 </p>
+
+<p> 
+ <%= @message.created_at %> 
+</p>
+
+
+<p> 
+ <%= @message.updated_at %> 
+</p>
+
+<% @all_authors.each do |message| %>
+
+<p>
+  <%= message.content %>
+</p>
+
+<%end %>
+
 
 <hr/>
 <a href="/messages"> Back to all messages </a>
